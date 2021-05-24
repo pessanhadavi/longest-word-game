@@ -1,0 +1,12 @@
+ <div class="container">
+   <h1>Result</h1>
+    <% if !@score_hash[:english_word] %>
+      <p>Sorry but "<strong><%= @word.downcase %></strong>" does not seem to be a valid English word...</p>
+    <% elsif !@score_hash[:in_grid] || @score_hash[:overused_letters] %>
+      <p>Sorry but "<strong><%= @word.downcase %></strong>" can't be built out of <%= @letters.join(", ") %>.</p>
+    <% else %>
+      <p><strong>Congratulations!</strong> "<%= @word.capitalize %>" is a valid English word!</p>
+    <% end %>
+
+  <%= link_to "Play again", new_path, :class => "button" %>
+</div>

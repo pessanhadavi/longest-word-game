@@ -1,0 +1,14 @@
+$theblue: #234ac9d0;
+
+.button {
+    margin: 0;
+    background-color: $theblue;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+    cursor: pointer;    
+}

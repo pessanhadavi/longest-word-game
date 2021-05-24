@@ -1,0 +1,32 @@
+$theblue: #234ac9d0;
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-box {
+    margin: 50px;
+}
+
+input[type=text] {
+    font-size: 15px;
+    border: 1px solid $theblue;
+    border-radius: 4px 0 0 4px;
+    line-height: 30px;
+    margin: 0;
+    border-right: none;
+    width: 250px;
+}
+
+input[type=submit] {
+    margin: 0;
+    background-color: $theblue;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid rgb(121, 121, 121);
+    border-radius: 0 4px 4px 0;
+    border-left: none;
+    cursor: pointer;    
+}
